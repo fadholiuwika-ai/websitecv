@@ -138,6 +138,7 @@ nav {
   Horoscope
 </a>
     </li>
+    <li><a href="#creditcard">Cek Kartu Kredit</a></li>
   </ul>
 </nav>
   <header>
@@ -184,12 +185,57 @@ nav {
       <p>LinkedIn: <a href="#">linkedin.com/in/fadholi</a></p>
       <p>GitHub: <a href="#">github.com/fadholi</a></p>
     </section>
+<section id="creditcard">
+  <h2>Validasi Kartu Kredit</h2>
+  <p>Masukkan nomor kartu kredit untuk dicek validitasnya:</p>
 
+  <input type="text" id="ccNumber" placeholder="Contoh: 4111111111111111">
+  <br><br>
+  <button onclick="validateCard()">Cek Validitas</button>
+
+  <p id="result"></p>
+</section>
   </div>
 
   <footer>
     <p>© 2026 Fadholi</p>
   </footer>
+
+  <footer>
+  <p>© 2026 Fadholi</p>
+</footer>
+
+<script>
+function validateCard() {
+  let number = document.getElementById("ccNumber").value;
+  number = number.replace(/\D/g, "");
+
+  let sum = 0;
+  let shouldDouble = false;
+
+  for (let i = number.length - 1; i >= 0; i--) {
+    let digit = parseInt(number.charAt(i));
+
+    if (shouldDouble) {
+      digit *= 2;
+      if (digit > 9) digit -= 9;
+    }
+
+    sum += digit;
+    shouldDouble = !shouldDouble;
+  }
+
+  let result = document.getElementById("result");
+
+  if (sum % 10 === 0 && number.length >= 13) {
+    result.innerHTML = "✅ Nomor kartu VALID";
+    result.style.color = "lightgreen";
+  } else {
+    result.innerHTML = "❌ Nomor kartu TIDAK VALID";
+    result.style.color = "red";
+  }
+}
+</script>
 
 </body>
 </html>
