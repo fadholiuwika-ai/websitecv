@@ -5,37 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV - MUHAMMAD FADHOLI</title>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-nav {
-  background: #020617;
-  padding: 15px;
-  position: sticky;
-  top: 0;
-}
-
-.navbar {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-
-.navbar li {
-  margin: 0 15px;
-}
-
-.navbar a {
-  color: #e2e8f0;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.navbar a:hover {
-  color: #38bdf8;
-}
     * {
       margin: 0;
       padding: 0;
@@ -47,6 +19,33 @@ nav {
       background: #0f172a;
       color: #e2e8f0;
       line-height: 1.6;
+    }
+
+    nav {
+      background: #020617;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    .navbar li {
+      margin: 0 15px;
+    }
+
+    .navbar a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar a:hover {
+      color: #38bdf8;
     }
 
     header {
@@ -62,11 +61,6 @@ nav {
 
     header h1 {
       margin-top: 15px;
-      font-size: 28px;
-    }
-
-    header p {
-      color: #94a3b8;
     }
 
     .container {
@@ -80,24 +74,11 @@ nav {
       background: #1e293b;
       padding: 20px;
       border-radius: 10px;
-      transition: 0.3s;
-    }
-
-    section:hover {
-      transform: translateY(-5px);
     }
 
     h2 {
-      margin-bottom: 10px;
       color: #38bdf8;
-    }
-
-    ul {
-      list-style: none;
-    }
-
-    ul li {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .skills span {
@@ -107,7 +88,18 @@ nav {
       padding: 5px 10px;
       border-radius: 5px;
       margin: 5px;
-      font-size: 14px;
+    }
+
+    input, button {
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      background: #38bdf8;
+      cursor: pointer;
     }
 
     footer {
@@ -115,93 +107,71 @@ nav {
       padding: 20px;
       color: #64748b;
     }
-
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 
 <body>
+
 <nav>
   <ul class="navbar">
     <li><a href="#">Home</a></li>
     <li><a href="#tentang">Tentang</a></li>
     <li><a href="#kontak">Kontak</a></li>
-    <li>
-      <a href="http://fadholiuwika-ai.infinityfreeapp.com/" target="_blank">
-  Horoscope
-</a>
-    </li>
     <li><a href="#creditcard">Cek Kartu Kredit</a></li>
+    <li>
+      <a href="http://fadholiuwika-ai.infinityfreeapp.com/" target="_blank" rel="noopener noreferrer">
+        Horoscope
+      </a>
+    </li>
   </ul>
 </nav>
-  <header>
-    <img src="profilfadholi.jpg" alt="Foto Profil">
-    <h1>MUHAMMAD FADHOLI</h1>
-    <p>Web Developer | Teknik Elektro</p>
-  </header>
 
-  <div class="container">
+<header>
+  <img src="profilfadholi.jpg" alt="Foto Profil">
+  <h1>MUHAMMAD FADHOLI</h1>
+  <p>Web Developer | Teknik Elektro</p>
+</header>
 
-    <section id="tentang">
-      <h2>Tentang Saya</h2>
-      <p>Saya adalah seorang mahasiswa UWIKA yang bersemangat dalam bidang Teknik Eelektronika yang sedang belajar dalam pengembangan web. Memiliki kemampuan dalam membuat website modern.</p>
-    </section>
+<div class="container">
 
-    <section>
-      <h2>Pendidikan</h2>
-      <ul>
-        <li><strong>Universitas Widya Kartika Surabaya</strong> - Teknik Elektro (2024 - 2026)</li>
-      </ul>
-    </section>
+  <section id="tentang">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah mahasiswa UWIKA yang sedang belajar pengembangan web dan memiliki semangat tinggi di bidang teknologi.</p>
+  </section>
 
-    <section>
-      <h2>Pengalaman</h2>
-      <ul>
-        <li><strong>Frontend Developer</strong> - Perusahaan A (2023)</li>
-        <li><strong>Freelancer Web</strong> - Project Website UMKM</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Pendidikan</h2>
+    <p>Universitas Widya Kartika Surabaya - Teknik Elektro (2024 - 2026)</p>
+  </section>
 
-    <section>
-      <h2>Skill</h2>
-      <div class="skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>UI/UX</span>
-      </div>
-    </section>
+  <section>
+    <h2>Skill</h2>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+    </div>
+  </section>
 
-    <section id="kontak">
-      <h2>Kontak</h2>
-      <p>Email: fadholi@gmail.com</p>
-      <p>LinkedIn: <a href="#">linkedin.com/in/fadholi</a></p>
-      <p>GitHub: <a href="#">github.com/fadholi</a></p>
-    </section>
-<section id="creditcard">
-  <h2>Validasi Kartu Kredit</h2>
-  <p>Masukkan nomor kartu kredit untuk dicek validitasnya:</p>
+  <section id="creditcard">
+    <h2>Validasi Kartu Kredit</h2>
+    <p>Masukkan nomor kartu:</p>
 
-  <input type="text" id="ccNumber" placeholder="Contoh: 4111111111111111">
-  <br><br>
-  <button onclick="validateCard()">Cek Validitas</button>
+    <input type="text" id="ccNumber" placeholder="Contoh: 4111111111111111">
+    <br>
+    <button onclick="validateCard()">Cek</button>
 
-  <p id="result"></p>
-</section>
-  </div>
+    <p id="result"></p>
+  </section>
 
-  <footer>
-    <p>© 2026 Fadholi</p>
-  </footer>
+  <section id="kontak">
+    <h2>Kontak</h2>
+    <p>Email: fadholi@gmail.com</p>
+  </section>
 
-  <footer>
+</div>
+
+<footer>
   <p>© 2026 Fadholi</p>
 </footer>
 
@@ -211,27 +181,27 @@ function validateCard() {
   number = number.replace(/\D/g, "");
 
   let sum = 0;
-  let shouldDouble = false;
+  let double = false;
 
   for (let i = number.length - 1; i >= 0; i--) {
-    let digit = parseInt(number.charAt(i));
+    let digit = parseInt(number[i]);
 
-    if (shouldDouble) {
+    if (double) {
       digit *= 2;
       if (digit > 9) digit -= 9;
     }
 
     sum += digit;
-    shouldDouble = !shouldDouble;
+    double = !double;
   }
 
   let result = document.getElementById("result");
 
   if (sum % 10 === 0 && number.length >= 13) {
-    result.innerHTML = "✅ Nomor kartu VALID";
+    result.innerHTML = "✅ Kartu VALID";
     result.style.color = "lightgreen";
   } else {
-    result.innerHTML = "❌ Nomor kartu TIDAK VALID";
+    result.innerHTML = "❌ Kartu TIDAK VALID";
     result.style.color = "red";
   }
 }
